@@ -1,0 +1,7 @@
+<%= @task.details %>
+<%= link_to "Retour case départ", all_path %>
+<%= link_to "Modifier la tâche", edit_path %>
+<%= link_to "Delete",
+  delete_path(@task),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>

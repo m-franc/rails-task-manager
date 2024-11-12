@@ -1,0 +1,7 @@
+<%= form_with model: @task, method: :patch do |form| %>
+  <%= form.label :title, "Modify task's name" %>
+  <%= form.text_field :title %>
+  <%= form.label :details, "Modify content's task" %>
+  <%= form.text_field :details %>
+  <%= form.submit "Send" %>
+<% end %>
